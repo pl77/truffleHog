@@ -5,6 +5,7 @@
 
 # Intellij
 /.idea/
+**/*.iml
 
 # Python virtualenv
 /venv*/
@@ -14,7 +15,7 @@
 /.pip_cache/
 /.pytest_cache/
 /.tox/
-/gd_truffleHog.egg-info/
+/*.egg-info/
 /html-reports/
 /reports/
-/truffleHog.egg-info/
+.coverage

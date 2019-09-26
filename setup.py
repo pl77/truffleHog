@@ -12,23 +12,23 @@ EXTRAS_REQUIRE = {
 }
 
 setup(
-    name='gd-truffleHog',
-    version='2.0.108',
-    description='Searches through git repositories for high entropy strings, digging deep into commit history.',
-    long_description='Searches through git repositories for secrets, digging deep into commit history and branches. '
-                     'This is effective at finding secrets accidentally committed.',
-    url='https://github.com/godaddy/truffleHog',
-    download_url='https://pypi.org/project/gd-truffleHog/#files',
-    author='Dylan Ayrey',
-    author_email='dxa4481@rit.edu',
-    maintainer='GoDaddy',
-    maintainer_email='dev_common_services@godaddy.com',
+    name='tartufo',
+    version='0.0.1',
+    description='tartufo is a tool for scanning git repositories for secrets/passwords/high-entropy data',
+    long_description='Seaches for secrets/high-entropy/passwords in git histories and pre-commit blobs '
+                     'with the intent to provide developers a way of preventing accidental leaking of '
+                     'privileged data. This project was inspired by Dylan Ayrey\'s project truffleHog '
+                     'https://github.com/dxa4481/truffleHog',
+    url='https://github.com/godaddy/tartufo',
+    download_url='https://pypi.org/project/tartufo/#files',
+    author='GoDaddy',
+    author_email='oss@godaddy.com',
     license='GNU',
-    packages=['truffleHog'],
+    packages=['tartufo'],
     install_requires=INSTALL_REQUIRES,
     setup_requires='',
     extras_require=EXTRAS_REQUIRE,
     entry_points={
-        'console_scripts': ['trufflehog = truffleHog.truffleHog:main'],
+        'console_scripts': ['tartufo = tartufo.tartufo:main'],
     },
 )
